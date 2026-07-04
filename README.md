@@ -40,13 +40,10 @@ As atividades apresentadas neste repositório, no entanto, foram desenvolvidas i
 
 ## 🗄️ Bases de dados utilizadas
 
-### TIC Governo Eletrônico, 2023 (Cetic.br)
-
-Utilizada para analisar a existência de instrumentos formais de governança de TI em prefeituras brasileiras.
-
-### Base Orçamentária da Prefeitura Municipal de São Paulo, 2025
-
-Utilizada para analisar a distribuição dos investimentos em Tecnologia da Informação no exercício de 2025.
+| Dataset | Fonte | Objetivo |
+|---|---|---|
+| TIC Governo Eletrônico (2023) | Cetic.br | Analisar a existência de instrumentos formais de governança de TI (PDTI/PSI) em prefeituras brasileiras |
+| Base Orçamentária da PMSP (2025) | Portal da Transparência / Execução Orçamentária da PMSP | Analisar a distribuição dos investimentos em Tecnologia da Informação no exercício de 2025 |
 
 ---
 
@@ -54,15 +51,11 @@ Utilizada para analisar a distribuição dos investimentos em Tecnologia da Info
 
 ### Base CETIC
 
-A planilha original apresentava células mescladas e estrutura voltada para leitura humana, dificultando a importação direta para o Pandas.
-
-Foi realizada uma etapa prévia de organização dos dados no Excel antes da análise.
+A planilha original apresentava células mescladas e estrutura voltada para leitura humana, dificultando a importação direta para o Pandas. Foi realizada uma etapa prévia de organização dos dados no Excel antes da análise.
 
 ### Base Orçamentária
 
-Os dados foram importados diretamente para Python.
-
-Foram realizadas etapas de:
+Os dados foram importados diretamente para Python. Foram realizadas etapas de:
 
 * seleção de colunas;
 * filtragem;
@@ -88,17 +81,19 @@ As iniciativas foram agrupadas em três categorias:
 
 ## 📊 Principais insights
 
+**76,7%** do orçamento de TI analisado está concentrado em manutenção e continuidade — contra apenas **1,8%** direcionado a novos desenvolvimentos.
+
 ### Governança de TI
 
-* Capitais apresentam maior adoção de instrumentos formais de governança do que municípios do interior.
+* Capitais apresentam maior adoção de instrumentos formais de governança do que municípios do interior (66% vs. 28%).
 * Municípios maiores tendem a possuir maior maturidade em governança de TI.
-* Mesmo em grandes municípios, ainda existem lacunas importantes relacionadas ao planejamento tecnológico.
+* Mesmo em grandes municípios (+500 mil hab.), ainda existem lacunas importantes — cerca de 30% das administrações não possuem planejamento formal.
 
 ### Orçamento de TI
 
 * Aproximadamente 76,7% do orçamento analisado está concentrado em atividades de manutenção e continuidade.
 * Apenas cerca de 1,8% está direcionado a novos desenvolvimentos.
-* Os dados sugerem que a continuidade e evolução de sistemas existentes desempenham papel central na estratégia de tecnologia da administração pública.
+* Os dados sugerem que a continuidade e evolução de sistemas existentes desempenham papel central na estratégia de tecnologia da administração pública — o que reforça a viabilidade estratégica de propor a continuidade do SIGESPRO, em vez de sua substituição.
 
 ---
 
@@ -115,9 +110,7 @@ As iniciativas foram agrupadas em três categorias:
 
 ## ⚠️ Limitações
 
-Esta análise foi conduzida com o objetivo de investigar se a continuidade do SIGESPRO estava alinhada às necessidades observadas na administração pública.
-
-Dessa forma, a seleção das bases de dados e a construção da metodologia foram orientadas por essa hipótese inicial.
+Esta análise foi conduzida com o objetivo de investigar se a continuidade do SIGESPRO estava alinhada às necessidades observadas na administração pública. Dessa forma, a seleção das bases de dados e a construção da metodologia foram orientadas por essa hipótese inicial.
 
 Além disso, a classificação das iniciativas orçamentárias foi construída especificamente para esta análise e pode ser refinada ou reinterpretada em estudos futuros.
 
@@ -132,11 +125,14 @@ Além disso, a classificação das iniciativas orçamentárias foi construída e
 ├── relatorio/
 └── README.md
 ```
+
 ---
 
-## 📧 Contato:
-  * [LinkedIn](https://www.linkedin.com/in/nagelamartins/)
-  * [GitHub](https://github.com/nagelamartins)
-  * [E-mail](mailto:nagela.msouza@gmail.com)
+## 📧 Contato
+
+* [LinkedIn](https://www.linkedin.com/in/nagelamartins/)
+* [GitHub](https://github.com/nagelamartins)
+* [E-mail](mailto:nagela.msouza@gmail.com)
 
 *Obrigada pela visita! 💛*
+
