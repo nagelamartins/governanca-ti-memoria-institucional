@@ -2,7 +2,7 @@
 
 ## 📌 Sobre o projeto
 
-Este repositório apresenta uma análise de dados desenvolvida como parte de um Projeto Integrador da graduação em Ciência de Dados.
+Este repositório apresenta uma análise de dados desenvolvida como parte de um Projeto Integrador da graduação em Ciência de Dados pela UNIVESP.
 
 O projeto tinha como objetivo apoiar a continuidade do desenvolvimento do SIGESPRO, um portal web criado para centralizar documentos, procedimentos e informações da Coordenação de Tecnologia da Informação (COTI) da Secretaria Municipal das Subprefeituras de São Paulo.
 
@@ -81,19 +81,32 @@ As iniciativas foram agrupadas em três categorias:
 
 ## 📊 Principais insights
 
-**76,7%** do orçamento de TI analisado está concentrado em manutenção e continuidade — contra apenas **1,8%** direcionado a novos desenvolvimentos.
+* **76,7%** do orçamento de TI analisado está concentrado em manutenção e continuidade — contra apenas **1,8%** direcionado a novos desenvolvimentos.
+  
+![Distribuição Orçamentária TI PMSP 2025](visualizacoes/distribuicao_orcamentaria_TI_PMSP_2025.png)  
 
 ### Governança de TI
 
 * Capitais apresentam maior adoção de instrumentos formais de governança do que municípios do interior (66% vs. 28%).
 * Municípios maiores tendem a possuir maior maturidade em governança de TI.
 * Mesmo em grandes municípios (+500 mil hab.), ainda existem lacunas importantes — cerca de 30% das administrações não possuem planejamento formal.
+  
+![Governança TI Capital/Interior](visualizacoes/governanca_TI_capital_interior.png)  
+
+![Governança TI por Porte do Município](visualizacoes/governanca_TI_porte_municipio.png)  
 
 ### Orçamento de TI
 
-* Aproximadamente 76,7% do orçamento analisado está concentrado em atividades de manutenção e continuidade.
-* Apenas cerca de 1,8% está direcionado a novos desenvolvimentos.
-* Os dados sugerem que a continuidade e evolução de sistemas existentes desempenham papel central na estratégia de tecnologia da administração pública — o que reforça a viabilidade estratégica de propor a continuidade do SIGESPRO, em vez de sua substituição.
+* As cinco principais atividades e projetos em TI a receber maior orçamento no ano de 2025 pela PMSP sugerem que a manutenção é um investimento significativo realizado pela prefeitura, e reforça que a eficiência na gestão pública de TI depende menos da criação constante de novas ferramentas e mais da capacidade de manter e evoluir as existentes.
+  
+![Atividade de Projetos de Maior Orçamento PMSP 2025](visualizacoes/atividade_projetos_maior_orcamento_PMSP_2025.png)  
+
+A análise combinada dessas duas fontes de dados sustenta dois pontos centrais:  
+
+1. Há um déficit real e desigual de governança formal de TI entre municípios brasileiros, o que reforça a importância de instrumentos (como um portal centralizado) que documentem processos e retirem conhecimento técnico crítico da dependência de pessoas específicas.  
+2. A alocação orçamentária de uma grande prefeitura já prioriza manutenção sobre criação, o que indica que dar continuidade a uma solução existente está alinhado à própria lógica de investimento da administração pública.
+   
+Essas conclusões foram usadas como fundamentação de dados para a proposta apresentada pelo grupo no relatório final do Projeto Integrador.
 
 ---
 
@@ -119,10 +132,21 @@ Além disso, a classificação das iniciativas orçamentárias foi construída e
 ## 📁 Estrutura do repositório
 
 ```text
-├── dados/
-├── notebook/
-├── imagens/
-├── relatorio/
+├── dados/  # Bases de dados em .xlsx utilizados na análise
+│   ├── Base de Dados Orçamentária da cidade de SP.xlsx   
+│   └── Planilha_formatada_pandas.xlsx                                    
+│
+├── relatorio/ # Recorte do relatório final com a fundamentação teórica e a análise escrita
+│   └── fundamentacao_teorica_recorte.pdf     
+│
+├── visualizacoes/ # Visualizações gráficas geradas melhor compreensão dos dadoa
+│   ├── atividade_projetos_maior_orcamento_PMSP_2025.png    
+│   ├── distribuicao_orcamentaria_TI_PMSP_2025.png    
+│   ├── governanca_TI_capital_interior.png  
+│   └── governanca_TI_porte_minicipio.png
+|
+├── analise_dados_governanca_ti.ipynb   # jupyter notebook completo com a análise, do tratamento dos dados às conclusões
+|
 └── README.md
 ```
 
