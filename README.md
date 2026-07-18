@@ -150,6 +150,10 @@ Além disso, a classificação das iniciativas orçamentárias foi construída e
 └── README.md
 ```
 
+## ✍️ Fluxo de trabalho (em resumo)
+
+![Resumo do fluxo de trabalho](visualizacoes/resumo_fluxo_trabalho.png)   
+
 ---
 
 ## 📧 Contato
